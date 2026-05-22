@@ -10,6 +10,7 @@ import SwiftUI
 struct NavBarView: View {
     var body: some View {
         HStack {
+            
             Image("person.crop.circle.fill")
                 .resizable()
                 .frame(width: 50, height: 50)
