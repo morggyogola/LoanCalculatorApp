@@ -26,7 +26,7 @@ struct SuccessModalView: View {
                     .font(.subheadline)
                     .padding(.horizontal)
                 
-                Button(action: {}) {
+                NavigationLink(destination: ActiveLoansView()) {
                     Text("Go Home")
                         .frame(maxWidth: .infinity)
                         .padding()
