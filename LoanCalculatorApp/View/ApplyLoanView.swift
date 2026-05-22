@@ -23,20 +23,20 @@ struct ApplyLoanView: View {
                 VStack(alignment: .leading, spacing: 15) {
                     
                     Text("Loan Type")
-                    TextField("Select Loan Type", text: $loanType)
+                    TextField("Car Loan", text: $loanType)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                     
                     Text("Loan Amount")
                     TextField("Amount", text: $loanAmount)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
-                    Text("Available Loan Limit: 12,000 KES")
+                    Text("Available  Limit: 12,000 KES")
                         .font(.caption)
                         .foregroundColor(.green)
                     
                     Text("Loan Period (months)")
                     TextField("Period", text: $loanPeriod)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
-                    Text("Total Amount Payable: 11,500 KES")
+                    Text("Total Payable: 1,100 KES")
                         .font(.caption)
                         .foregroundColor(.green)
                     
@@ -51,7 +51,7 @@ struct ApplyLoanView: View {
                         .font(.headline)
                     
                     HStack {
-                        Text("1st instalment - 22 Oct 2025")
+                        Text("1st instalment - 08 Jan 2004")
                         Spacer()
                         Text("5,750 KES")
                             .font(Font.body.bold())
