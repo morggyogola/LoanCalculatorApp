@@ -66,7 +66,7 @@ struct ApplyLoanView: View {
                 .padding()
             }
             
-            Button(action: {}) {
+            NavigationLink(destination: LoanSummaryView()) {
                 Text("Apply Loan")
                     .frame(maxWidth: .infinity)
                     .padding()
@@ -76,6 +76,7 @@ struct ApplyLoanView: View {
             }
             .padding()
         }
+        .navigationBarHidden(true)
     }
 }
 
