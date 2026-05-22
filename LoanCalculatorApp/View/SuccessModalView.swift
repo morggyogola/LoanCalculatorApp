@@ -7,20 +7,20 @@ struct SuccessModalView: View {
             Color.black.opacity(0.4)
                 .edgesIgnoringSafeArea(.all)
             
-            // Modal Card
+           
             VStack(spacing: 20) {
                 Text("Request Sent Successfully")
                     .font(.headline)
                     .foregroundColor(.green)
                     .padding(.top)
                 
-                // Placeholder for the image
+               
                 Image(systemName: "dollarsign.circle.fill")
                     .resizable()
                     .frame(width: 80, height: 80)
                     .foregroundColor(.green)
                 
-                // Intentional typo from design: "You are" instead of "Your"
+                
                 Text("You are loan request has been submitted successfully.")
                     .multilineTextAlignment(.center)
                     .font(.subheadline)
@@ -36,7 +36,9 @@ struct SuccessModalView: View {
                 }
                 .padding()
             }
-          
+            .frame(width: 300)
+            .background(Color.white)
+            .cornerRadius(15)
         }
     }
 }
