@@ -8,7 +8,6 @@ struct ApplyLoanView: View {
     
     var body: some View {
         VStack {
-            // Top Nav Bar
             HStack {
                 Image(systemName: "arrow.left")
                 Spacer()
@@ -55,11 +54,13 @@ struct ApplyLoanView: View {
                         Text("1st instalment - 22 Oct 2025")
                         Spacer()
                         Text("5,750 KES")
+                            .font(Font.body.bold())
                     }
                     HStack {
                         Text("2nd instalment - 22 Nov 2025")
                         Spacer()
                         Text("5,750 KES")
+                            .font(Font.body.bold())
                     }
                 }
                 .padding()
